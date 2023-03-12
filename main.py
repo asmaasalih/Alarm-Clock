@@ -14,7 +14,6 @@ def alarm():
     print(alarm_hour+":"+alarm_min+":"+alarm_sec)
     while True:
         now = datetime.now()
-        print(now)
         if alarm_hour == now.strftime("%H") and alarm_min == now.strftime("%M") and alarm_sec == now.strftime("%S"):
             print("Playing.....")
             playsound("Alarm.mp3")
